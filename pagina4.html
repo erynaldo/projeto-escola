@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Feedback</title>
+</head>
+
+<body>
+
+    <div class="page2"> 
+
+            <form action="msgSuccess.html" method="post" class="formulario" id="myForm">
+                <!-- <hr/> -->
+                <p class="cpf">CPF/RA:</p>
+                <hr/>
+                <p hidden>Hoje: </p>
+                <input type="text" id="cpf_ra" name="cpf_ra" value="" hidden>
+
+                <label>Como você se sente agora?</label>
+                <div class="cx-emoji">
+                    <div class="emoji">
+                        <img src="img/feliz.jpg" alt="Feliz" width="46" height="46" title="Feliz"/>
+                        <br/><input type="radio" id="status_saida" name="status_saida" value="FELIZ" required>                  
+                        <span for="">FELIZ</span>
+                    </div>
+
+                    <div class="emoji">
+                        <img src="img/calmo.jpg" alt="Calmo" width="46" height="46" title="Calmo"/>
+                        <br/><input type="radio" id="status_saida" name="status_saida" value="CALMO" required>
+                        <span for="">CALMO</span>
+                    </div>
+
+                    <div class="emoji">
+                        <img src="img/ansioso.png" alt="Ansioso" width="46" height="46" title="Ansioso"/>
+                        <br/><input type="radio" id="status_saida" name="status_saida" value="ANSIOSO" required>
+                        <span for="">ANSIOSO</span>
+                    </div>
+
+                    <div class="emoji">
+                        <img src="img/irritado.jpg" alt="Irritado" width="46" height="46" title="Irritado"/>
+                        <br/><input type="radio" id="status_saida" name="status_saida" value="IRRITADO" required>
+                        <span for="">IRRITADO</span>
+                    </div>
+
+                    <div class="emoji">
+                        <img src="img/triste.jpg" alt="Triste" width="46" height="46" title="Triste"/>
+                        <br/><input type="radio" id="status_saida" name="status_saida" value="TRISTE" required>
+                        <span for="">TRISTE</span>
+                    </div>
+                </div>
+
+
+                <label>Marque a(s) atividade(s) que você mais gostou</label>
+                <div class="cx-check">
+
+                        <input type="checkbox" class="get_value" id="atividades" name="atividades_gostou" value=""><span class="atividade"></span><br>
+
+                </div>
+
+                <button type="submit" class="btn" value="">Enviar</button>
+                <div class="linksFinais">
+                    <p><a href="javascript:history.back()" class="link-voltar">Voltar</a></p>
+                    <p><a href="/" class="link-voltar">Início</a></p>
+                </div>
+            </form>
+        
+    </div>
+</body>
+</html>
